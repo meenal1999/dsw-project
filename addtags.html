@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Tags </title>
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <style>
+  	.container{
+		font-family: 'Montserrat', sans-serif;
+		border: 40px;
+		/*width: 70%;*/
+	}
+	.input-field{
+		
+  		padding: 4px;
+  		
+	}
+	.tarea{
+		 height: auto; 
+		 width: 50%;
+	}
+	.tex{
+
+		width: 50%;
+	}
+
+
+  </style>
+</head>
+<body>
+	<!-- <div class="header" id="myHeader">
+	<nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Log In</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Sign Up</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Modal</a>
+    </li>
+  </ul>
+
+</nav>
+</div> -->
+	<div class="container" style="font-family: 'Montserrat';  " >
+	<center>
+		<br>
+		<h1>Add Tags</h1>
+		<h5>You are on the tag creation page.</h5>
+		<form action="/action_page.php">
+        <div class="input-container input-field ">
+			
+			<br>
+			<input class="input-field tex " type="textbox" name="text"  placeholder="Tag name">
+			<br>
+			<button type="button" class= "z-depth-3 btn btn-info btn-md " > Create</button>
+			<br><br>
+			<div><br>			
+			<textarea class="tarea" rows="6" placeholder="Tag Details" width="70%"></textarea></div>
+			<br>
+			<div class="btn-group">
+    			<button type="button" class=" z-depth-3 btn btn-info btn-md " > Add</button>
+			    <button type="button" class=" z-depth-3 btn btn-info btn-md " > Go to Tutorial
+			    <i class="material-icons right">send</i>
+			</button>
+			</div>
+			
+			</div><br>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+</center>
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			 <div class="modal-dialog modal-lg" role="document">
+			   <div class="modal-content" style="font-family: 'Montserrat' ">
+			     <!-- <div class="container" style="font-family: 'Montserrat' "> -->
+				<!-- <center> -->
+					<h3>Add Tags</h3>
+					<h6>You are on the tag creation page.</h6>
+					<form action="/action_page.php">
+			        <div class="input-container input-field  ">
+						<input class="input-field tex " type="textbox" name="text"  placeholder="Tag name">
+						<br>
+						<button type="button" class= "z-depth-3 btn btn-info btn-md " > Create</button>
+						<br><br>
+						<div>			
+						<textarea class="tarea" rows="6" placeholder="Tag Details" ></textarea></div>
+						
+						<div class="btn-group">
+			    			<button type="button" class=" z-depth-3 btn btn-info btn-md " > Add</button>
+						    <button type="button" class=" z-depth-3 btn btn-info btn-md " > Go to Tutorial
+						    <i class="material-icons right">send</i>
+						</button>
+						</div>
+						
+
+			   </div>
+			 </div>
+			</div>
+<br>
+<br>
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
